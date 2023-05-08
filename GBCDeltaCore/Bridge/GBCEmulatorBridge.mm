@@ -73,9 +73,48 @@
         std::shared_ptr<GBCInputGetter> inputGetter(new GBCInputGetter());
         _inputGetter = inputGetter;
         
+        /*
+         // HK Game Boy Pocket
+         int c0 = 11122074;
+         int c1 = 8490350;
+         int c2 = 5068095;
+         int c3 = 2633251;
+         */
+        
+        /*
+        // HK Game Boy DMG
+        int c0 = 11122074;
+        int c1 = 8490350;
+        int c2 = 5068095;
+        int c3 = 2633251;
+        */
+#if 1
+        int c0 = 9872427;
+        int c1 = 7440419;
+        int c2 = 4875299;
+        int c3 = 3822870;
+#else
+        int c0 = 9607029;
+        int c1 = 6646357;
+        int c2 = 5462089;
+        int c3 = 2632742;
+#endif
         std::shared_ptr<gambatte::GB> gambatte(new gambatte::GB());
         gambatte->setInputGetter(inputGetter.get());
         gambatte->setSaveDir(_gameSaveDirectory.fileSystemRepresentation);
+        gambatte->setDmgPaletteColor(0, 0, c0);
+        gambatte->setDmgPaletteColor(0, 1, c1);
+        gambatte->setDmgPaletteColor(0, 2, c2);
+        gambatte->setDmgPaletteColor(0, 3, c3);
+        gambatte->setDmgPaletteColor(1, 0, c0);
+        gambatte->setDmgPaletteColor(1, 1, c1);
+        gambatte->setDmgPaletteColor(1, 2, c2);
+        gambatte->setDmgPaletteColor(1, 3, c3);
+        gambatte->setDmgPaletteColor(2, 0, c0);
+        gambatte->setDmgPaletteColor(2, 1, c1);
+        gambatte->setDmgPaletteColor(2, 2, c2);
+        gambatte->setDmgPaletteColor(2, 3, c3);
+
         _gambatte = gambatte;
         
         _cheats = [NSMutableSet set];
@@ -290,7 +329,7 @@
 
 - (NSTimeInterval)frameDuration
 {
-    return (1.0 / 60.0);
+    return (1.0 / 59.727501);
 }
 
 @end

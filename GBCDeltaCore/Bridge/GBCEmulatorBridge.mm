@@ -73,47 +73,9 @@
         std::shared_ptr<GBCInputGetter> inputGetter(new GBCInputGetter());
         _inputGetter = inputGetter;
         
-        /*
-         // HK Game Boy Pocket
-         int c0 = 11122074;
-         int c1 = 8490350;
-         int c2 = 5068095;
-         int c3 = 2633251;
-         */
-        
-        /*
-        // HK Game Boy DMG
-        int c0 = 11122074;
-        int c1 = 8490350;
-        int c2 = 5068095;
-        int c3 = 2633251;
-        */
-#if 1
-        int c0 = 9872427;
-        int c1 = 7440419;
-        int c2 = 4875299;
-        int c3 = 3822870;
-#else
-        int c0 = 9607029;
-        int c1 = 6646357;
-        int c2 = 5462089;
-        int c3 = 2632742;
-#endif
         std::shared_ptr<gambatte::GB> gambatte(new gambatte::GB());
         gambatte->setInputGetter(inputGetter.get());
         gambatte->setSaveDir(_gameSaveDirectory.fileSystemRepresentation);
-        gambatte->setDmgPaletteColor(0, 0, c0);
-        gambatte->setDmgPaletteColor(0, 1, c1);
-        gambatte->setDmgPaletteColor(0, 2, c2);
-        gambatte->setDmgPaletteColor(0, 3, c3);
-        gambatte->setDmgPaletteColor(1, 0, c0);
-        gambatte->setDmgPaletteColor(1, 1, c1);
-        gambatte->setDmgPaletteColor(1, 2, c2);
-        gambatte->setDmgPaletteColor(1, 3, c3);
-        gambatte->setDmgPaletteColor(2, 0, c0);
-        gambatte->setDmgPaletteColor(2, 1, c1);
-        gambatte->setDmgPaletteColor(2, 2, c2);
-        gambatte->setDmgPaletteColor(2, 3, c3);
 
         _gambatte = gambatte;
         
@@ -329,7 +291,75 @@
 
 - (NSTimeInterval)frameDuration
 {
-    return (1.0 / 59.727501);
+    return (1.0 / 59.7275005696);
+}
+
+#pragma mark - Palette -
+
+- (void)updatePalette
+{
+    int color[4];
+    
+    switch(self.palette)
+    {
+        case NONE:
+            color[0] = 0xFFFFFF;
+            color[1] = 0xAAAAAA;
+            color[2] = 0x666666;
+            color[3] = 0x000000;
+            break;
+        case DMG:
+            color[0] = 0x99A342;
+            color[1] = 0x768736;
+            color[2] = 0x4F632C;
+            color[3] = 0x405420;
+            break;
+        case POCKET:
+            color[0] = 0xAAB59C;
+            color[1] = 0x848C72;
+            color[2] = 0x4E5540;
+            color[3] = 0x292E25;
+            break;
+        case LIGHT:
+            color[0] = 0x4BD4E5;
+            color[1] = 0x4ABBC8;
+            color[2] = 0x13A1AA;
+            color[3] = 0x286F7F;
+            break;
+        case DMG_LIBRETRO:
+            color[0] = 0x578200;
+            color[1] = 0x317400;
+            color[2] = 0x005121;
+            color[3] = 0x00420C;
+            break;
+        case POCKET_LIBRETRO:
+            color[0] = 0xA7B19A;
+            color[1] = 0x86927C;
+            color[2] = 0x535f49;
+            color[3] = 0x2A3325;
+            break;
+        case LIGHT_LIBRETRO:
+            color[0] = 0x01CBDF;
+            color[1] = 0x01B6D5;
+            color[2] = 0x269BAD;
+            color[3] = 0x00778D;
+            break;
+    }
+    
+    self.gambatte->setDmgPaletteColor(0, 0, color[0]);
+    self.gambatte->setDmgPaletteColor(0, 1, color[1]);
+    self.gambatte->setDmgPaletteColor(0, 2, color[2]);
+    self.gambatte->setDmgPaletteColor(0, 3, color[3]);
+    self.gambatte->setDmgPaletteColor(1, 0, color[0]);
+    self.gambatte->setDmgPaletteColor(1, 1, color[1]);
+    self.gambatte->setDmgPaletteColor(1, 2, color[2]);
+    self.gambatte->setDmgPaletteColor(1, 3, color[3]);
+    self.gambatte->setDmgPaletteColor(2, 0, color[0]);
+    self.gambatte->setDmgPaletteColor(2, 1, color[1]);
+    self.gambatte->setDmgPaletteColor(2, 2, color[2]);
+    self.gambatte->setDmgPaletteColor(2, 3, color[3]);
+    
+    return;
 }
 
 @end

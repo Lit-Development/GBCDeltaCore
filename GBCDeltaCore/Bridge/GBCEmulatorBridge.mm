@@ -291,7 +291,7 @@
 
 - (NSTimeInterval)frameDuration
 {
-    return (1.0 / 59.7275005696);
+    return (1.0 / 60.0);
 }
 
 #pragma mark - Palette -

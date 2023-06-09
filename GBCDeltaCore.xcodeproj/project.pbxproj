@@ -10,7 +10,7 @@
 		BF5267CE1F60BD7F007737FB /* Standard.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BF5267CD1F60BD7C007737FB /* Standard.deltamapping */; };
 		BF5996961EA0551100595F8D /* GBCInputGetter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5996941EA0551100595F8D /* GBCInputGetter.cpp */; };
 		BF5996971EA0551100595F8D /* GBCInputGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5996951EA0551100595F8D /* GBCInputGetter.h */; };
-		BF5996991EA0598E00595F8D /* Standard.deltaskin in Resources */ = {isa = PBXBuildFile; fileRef = BF5996981EA0598E00595F8D /* Standard.deltaskin */; };
+		BF5996991EA0598E00595F8D /* Standard.ignitedskin in Resources */ = {isa = PBXBuildFile; fileRef = BF5996981EA0598E00595F8D /* Standard.ignitedskin */; };
 		BF833CAD1EB0821E00B73D57 /* GBCCheat.h in Headers */ = {isa = PBXBuildFile; fileRef = BF833CAB1EB0821E00B73D57 /* GBCCheat.h */; };
 		BF833CAE1EB0821E00B73D57 /* GBCCheat.m in Sources */ = {isa = PBXBuildFile; fileRef = BF833CAC1EB0821E00B73D57 /* GBCCheat.m */; };
 		BF8F2AB31E9C879300F89F15 /* GBCDeltaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8F2AB11E9C879300F89F15 /* GBCDeltaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -98,7 +98,7 @@
 		BF5267CD1F60BD7C007737FB /* Standard.deltamapping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Standard.deltamapping; sourceTree = "<group>"; };
 		BF5996941EA0551100595F8D /* GBCInputGetter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GBCInputGetter.cpp; sourceTree = "<group>"; };
 		BF5996951EA0551100595F8D /* GBCInputGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBCInputGetter.h; sourceTree = "<group>"; };
-		BF5996981EA0598E00595F8D /* Standard.deltaskin */ = {isa = PBXFileReference; lastKnownFileType = file; name = Standard.deltaskin; path = "Controller Skin/Standard.deltaskin"; sourceTree = "<group>"; };
+		BF5996981EA0598E00595F8D /* Standard.ignitedskin */ = {isa = PBXFileReference; lastKnownFileType = file; name = Standard.ignitedskin; path = "Controller Skin/Standard.ignitedskin"; sourceTree = "<group>"; };
 		BF833CAB1EB0821E00B73D57 /* GBCCheat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBCCheat.h; sourceTree = "<group>"; };
 		BF833CAC1EB0821E00B73D57 /* GBCCheat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBCCheat.m; sourceTree = "<group>"; };
 		BF8F2AAE1E9C879300F89F15 /* GBCDeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GBCDeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -550,7 +550,7 @@
 			isa = PBXGroup;
 			children = (
 				BF8F2AB21E9C879300F89F15 /* Info.plist */,
-				BF5996981EA0598E00595F8D /* Standard.deltaskin */,
+				BF5996981EA0598E00595F8D /* Standard.ignitedskin */,
 				BF5267CD1F60BD7C007737FB /* Standard.deltamapping */,
 			);
 			name = "Supporting Files";
@@ -677,7 +677,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5996991EA0598E00595F8D /* Standard.deltaskin in Resources */,
+				BF5996991EA0598E00595F8D /* Standard.ignitedskin in Resources */,
 				BF5267CE1F60BD7F007737FB /* Standard.deltamapping in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

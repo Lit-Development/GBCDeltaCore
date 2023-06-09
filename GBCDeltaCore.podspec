@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.public_header_files = "GBCDeltaCore/Types/GBCTypes.h", "GBCDeltaCore/Bridge/GBCEmulatorBridge.h"
   spec.header_mappings_dir = ""
   spec.resource_bundles = {
-    "GBCDeltaCore" => ["GBCDeltaCore/**/*.deltamapping", "GBCDeltaCore/**/*.deltaskin"]
+    "GBCDeltaCore" => ["GBCDeltaCore/**/*.deltamapping", "GBCDeltaCore/**/*.ignitedskin"]
   }
   
   spec.dependency 'DeltaCore'

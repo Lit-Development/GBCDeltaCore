@@ -101,6 +101,20 @@
                 "width": 240,
                 "height": 160
               },
+              "outputFrame": {
+                "x": 12,
+                "y": 45,
+                "width": 390,
+                "height": 351
+              }
+            },
+            {
+              "inputFrame": {
+                "x": 0,
+                "y": 0,
+                "width": 240,
+                "height": 160
+              },
               "filters": [
                 {
                   "name": "CIAffineTransform",
@@ -408,6 +422,20 @@
             }
           ],
           "screens": [
+            {
+              "inputFrame": {
+                "x": 0,
+                "y": 0,
+                "width": 240,
+                "height": 160
+              },
+              "outputFrame": {
+                "x": 12,
+                "y": 120,
+                "width": 390,
+                "height": 351
+              }
+            },
             {
               "inputFrame": {
                 "x": 0,

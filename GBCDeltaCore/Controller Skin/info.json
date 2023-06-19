@@ -95,12 +95,6 @@
           ],
           "screens": [
             {
-              "inputFrame": {
-                "x": 0,
-                "y": 0,
-                "width": 240,
-                "height": 160
-              },
               "outputFrame": {
                 "x": 12,
                 "y": 45,
@@ -210,12 +204,6 @@
           ],
           "screens": [
             {
-              "inputFrame": {
-                "x": 0,
-                "y": 0,
-                "width": 240,
-                "height": 160
-              },
               "outputFrame": {
                 "x": 188,
                 "y": 45,
@@ -327,12 +315,6 @@
           ],
           "screens": [
             {
-              "inputFrame": {
-                "x": 0,
-                "y": 0,
-                "width": 240,
-                "height": 160
-              },
               "outputFrame": {
                 "x": 12,
                 "y": 120,
@@ -442,12 +424,6 @@
           ],
           "screens": [
             {
-              "inputFrame": {
-                "x": 0,
-                "y": 0,
-                "width": 240,
-                "height": 160
-              },
               "outputFrame": {
                 "x": 248,
                 "y": 27,
@@ -561,12 +537,6 @@
           ],
           "screens": [
             {
-              "inputFrame": {
-                "x": 0,
-                "y": 0,
-                "width": 240,
-                "height": 160
-              },
               "outputFrame": {
                 "x": 66,
                 "y": 23,
@@ -676,12 +646,6 @@
           ],
           "screens": [
             {
-              "inputFrame": {
-                "x": 0,
-                "y": 0,
-                "width": 240,
-                "height": 160
-              },
               "outputFrame": {
                 "x": 212,
                 "y": 114,

@@ -8,6 +8,7 @@
 
 #import "GBCTypes.h"
 
+GameType const GameTypeGB = @"com.rileytestut.delta.game.gb";
 GameType const GameTypeGBC = @"com.rileytestut.delta.game.gbc";
 
 CheatType const CheatTypeGameGenie = @"GameGenie";

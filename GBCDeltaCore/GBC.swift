@@ -54,6 +54,22 @@ public struct GBC: DeltaCoreProtocol
     }
 }
 
+@objc public enum GBGameInput: Int, Input
+{
+    case up = 0x40
+    case down = 0x80
+    case left = 0x20
+    case right = 0x10
+    case a = 0x01
+    case b = 0x02
+    case start = 0x08
+    case select = 0x04
+    
+    public var type: InputType {
+        return .game(.gb)
+    }
+}
+
 public struct GB: DeltaCoreProtocol
 {
     public static let core = GB()
@@ -62,7 +78,7 @@ public struct GB: DeltaCoreProtocol
     public var identifier: String { "com.rileytestut.GBDeltaCore" }
     
     public var gameType: GameType { GameType.gb }
-    public var gameInputType: Input.Type { GBCGameInput.self }
+    public var gameInputType: Input.Type { GBGameInput.self }
     public var gameSaveFileExtension: String { "sav" }
     
     public let audioFormat = AVAudioFormat(commonFormat: .pcmFormatInt16, sampleRate: 35112 * 60, channels: 2, interleaved: true)!

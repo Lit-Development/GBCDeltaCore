@@ -59,7 +59,7 @@ public struct GB: DeltaCoreProtocol
     public static let core = GB()
     
     public var name: String { "GBCDeltaCore" }
-    public var identifier: String { "com.rileytestut.GBCDeltaCore" }
+    public var identifier: String { "com.rileytestut.GBDeltaCore" }
     
     public var gameType: GameType { GameType.gb }
     public var gameInputType: Input.Type { GBCGameInput.self }

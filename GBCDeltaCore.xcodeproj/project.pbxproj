@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC66B0362B11A29900B97652 /* Standard-com.rileytestut.GBDeltaCore.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = AC66B0302B1182E400B97652 /* Standard-com.rileytestut.GBDeltaCore.deltamapping */; };
-		AC66B0372B11A29900B97652 /* Standard-com.rileytestut.GBDeltaCore.ignitedskin in Resources */ = {isa = PBXBuildFile; fileRef = AC66B0312B1182E400B97652 /* Standard-com.rileytestut.GBDeltaCore.ignitedskin */; };
 		BF5267CE1F60BD7F007737FB /* Standard.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BF5267CD1F60BD7C007737FB /* Standard.deltamapping */; };
 		BF5996961EA0551100595F8D /* GBCInputGetter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5996941EA0551100595F8D /* GBCInputGetter.cpp */; };
 		BF5996971EA0551100595F8D /* GBCInputGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5996951EA0551100595F8D /* GBCInputGetter.h */; };
@@ -97,8 +95,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AC66B0302B1182E400B97652 /* Standard-com.rileytestut.GBDeltaCore.deltamapping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Standard-com.rileytestut.GBDeltaCore.deltamapping"; sourceTree = "<group>"; };
-		AC66B0312B1182E400B97652 /* Standard-com.rileytestut.GBDeltaCore.ignitedskin */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Standard-com.rileytestut.GBDeltaCore.ignitedskin"; path = "Controller Skin/Standard-com.rileytestut.GBDeltaCore.ignitedskin"; sourceTree = "<group>"; };
 		BF5267CD1F60BD7C007737FB /* Standard.deltamapping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Standard.deltamapping; sourceTree = "<group>"; };
 		BF5996941EA0551100595F8D /* GBCInputGetter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GBCInputGetter.cpp; sourceTree = "<group>"; };
 		BF5996951EA0551100595F8D /* GBCInputGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBCInputGetter.h; sourceTree = "<group>"; };
@@ -556,8 +552,6 @@
 				BF8F2AB21E9C879300F89F15 /* Info.plist */,
 				BF5996981EA0598E00595F8D /* Standard.ignitedskin */,
 				BF5267CD1F60BD7C007737FB /* Standard.deltamapping */,
-				AC66B0302B1182E400B97652 /* Standard-com.rileytestut.GBDeltaCore.deltamapping */,
-				AC66B0312B1182E400B97652 /* Standard-com.rileytestut.GBDeltaCore.ignitedskin */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -683,8 +677,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC66B0362B11A29900B97652 /* Standard-com.rileytestut.GBDeltaCore.deltamapping in Resources */,
-				AC66B0372B11A29900B97652 /* Standard-com.rileytestut.GBDeltaCore.ignitedskin in Resources */,
 				BF5996991EA0598E00595F8D /* Standard.ignitedskin in Resources */,
 				BF5267CE1F60BD7F007737FB /* Standard.deltamapping in Resources */,
 			);

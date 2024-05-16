@@ -32,7 +32,7 @@ public struct GBC: DeltaCoreProtocol
     public static let core = GBC()
     
     public var name: String { "GBCDeltaCore" }
-    public var identifier: String { "com.rileytestut.GBCDeltaCore" }
+    public var identifier: String { "com.litritt.GBCDeltaCore" }
     
     public var gameType: GameType { GameType.gbc }
     public var gameInputType: Input.Type { GBCGameInput.self }

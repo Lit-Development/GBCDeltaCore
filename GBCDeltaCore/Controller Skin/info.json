@@ -1,7 +1,7 @@
 {
   "name": "Standard GBC",
-  "identifier": "com.delta.gbc.standard",
-  "gameTypeIdentifier": "com.rileytestut.delta.game.gbc",
+  "identifier": "com.ignited.gbc.standard",
+  "gameTypeIdentifier": "com.litritt.ignited.game.gbc",
   "debug": false,
   "representations": {
     "iphone": {
